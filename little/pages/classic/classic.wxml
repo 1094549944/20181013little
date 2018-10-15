@@ -1,0 +1,6 @@
+<!-- pages/classic/classic.wxml -->
+<view class='container'>
+  <view class='header'>
+    <view class="link-container"></view>
+  </view>
+</view>

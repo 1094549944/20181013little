@@ -4,5 +4,5 @@
     <view class="link-container"></view>
   </view>
 </view> -->
-<v-like like="{{classicData.like_status}}" count="{{classicData.fav_nums}}" readOnly="{{true}}" />
-<view>{{classicData.like_status}}{{classicData.fav_nums}}</view>
+<v-like bind:like="onLike" like="{{classicData.like_status}}" count="{{classicData.fav_nums}}" readOnly="{{classicData.like_status}}" />
+<v-movie img="{{classicData.image}}" content="{{classicData.content}}" />

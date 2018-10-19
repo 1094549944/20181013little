@@ -2,11 +2,13 @@
 import {
   ClassModel
 } from '../../models/classic.js'
+import { LikeModel } from '../../models/like.js'
 const classicModel = new ClassModel()
+const likeModel = new LikeModel()
 Page({
 
   /**
-   * 页面的初始数据
+   * 页面的初始数据  
    */
   data: {
     classicData: null
@@ -26,7 +28,13 @@ Page({
       })
     })
   },
+  onLike: function (event) {
 
+    let behavior = event.detail.behavior
+    likeModel.like(behavior, this.data.classicData.id, this.data.classicData.type, (res) => {
+
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

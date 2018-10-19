@@ -34,6 +34,7 @@ Component({
    */
   methods: {
     onLike: function (event) {
+
       // 自定义事件
       if (this.properties.readOnly) {
         return
@@ -46,7 +47,8 @@ Component({
         count: count,
         like: !like
       })
-      // 激活
+      // 激活 behavior 用来标识，是点赞，还是取消点赞
+      // triggerEvent 激活自定义
       let behavior = this.properties.like ? 'like' : 'cancel'
       this.triggerEvent('like', {
         behavior: behavior

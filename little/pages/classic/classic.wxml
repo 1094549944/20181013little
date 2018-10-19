@@ -1,6 +1,8 @@
-<!-- pages/classic/classic.wxml -->
-<view class='container'>
+<!--  -->
+<!-- <view class='container'>
   <view class='header'>
     <view class="link-container"></view>
   </view>
-</view>
+</view> -->
+<v-like like="{{classicData.like_status}}" count="{{classicData.fav_nums}}" readOnly="{{true}}" />
+<view>{{classicData.like_status}}{{classicData.fav_nums}}</view>

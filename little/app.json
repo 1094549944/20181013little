@@ -2,9 +2,7 @@
   "pages": [
     "pages/classic/classic",
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/compontnts/link/index.xml",
-    "pages/compontnts/link/index"
+    "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",

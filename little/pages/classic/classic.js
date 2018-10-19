@@ -32,7 +32,17 @@ Page({
 
     let behavior = event.detail.behavior
     likeModel.like(behavior, this.data.classicData.id, this.data.classicData.type, (res) => {
-
+      wx.showModal({
+        title: '提示',
+        icon: 'success',
+        content: res.msg,
+        showCancel: false,
+        success: (res) => {
+          if (res.confirm) {
+            console.log('用户点击确定')
+          }
+        }
+      })
     })
   },
   /**

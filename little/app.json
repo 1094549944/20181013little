@@ -3,7 +3,8 @@
     "pages/classic/classic",
     "pages/index/index",
     "pages/logs/logs",
-    "components/classic/movie/index"
+    "components/classic/movie/index",
+    "components/classic/epsoide"
   ],
   "window": {
     "backgroundTextStyle": "light",

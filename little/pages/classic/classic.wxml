@@ -4,5 +4,7 @@
     <view class="link-container"></view>
   </view>
 </view> -->
+<v-episode class="episode" index="{{classicData.index}}" />
+
 <v-like bind:likeFun="onLike" like="{{classicData.like_status}}" count="{{classicData.fav_nums}}" readOnly="{{classicData.like_status}}" />
 <v-movie img="{{classicData.image}}" content="{{classicData.content}}" />

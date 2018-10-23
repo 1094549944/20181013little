@@ -4,7 +4,7 @@
     "pages/index/index",
     "pages/logs/logs",
     "components/classic/movie/index",
-    "components/classic/epsoide"
+    "components/episode/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

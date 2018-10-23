@@ -1,10 +1,10 @@
 <!--  -->
-<!-- <view class='container'>
-  <view class='header'>
-    <view class="link-container"></view>
+<view class="container">
+  <view class="header">
+    <v-episode class="episode" index="{{classicData.index}}" />
+    <view class="like-container">
+      <v-like bind:likeFun="onLike" like="{{classicData.like_status}}" _id="{{classicData._id}}" count="{{classicData.fav_nums}}" readOnly="{{classicData.like_status}}" />
+    </view>
   </view>
-</view> -->
-<v-episode class="episode" index="{{classicData.index}}" />
-
-<v-like bind:likeFun="onLike" like="{{classicData.like_status}}" count="{{classicData.fav_nums}}" readOnly="{{classicData.like_status}}" />
-<v-movie img="{{classicData.image}}" content="{{classicData.content}}" />
+  <v-movie hidden="{{classicData.type!=100}}" img="{{classicData.image}}" content="{{classicData.content}}" />
+</view>

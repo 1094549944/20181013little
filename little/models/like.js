@@ -7,7 +7,7 @@ class LikeModel extends HTTP {
       url: url,
       method: 'POST',
       data: {
-        art_id: artID,
+        _id: artID,
         type: category
       },
       success: (res) => {
@@ -15,9 +15,6 @@ class LikeModel extends HTTP {
       }
     })
   }
-
-
-
 }
 module.exports = {
   LikeModel

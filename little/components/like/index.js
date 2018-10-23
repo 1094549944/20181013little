@@ -12,6 +12,9 @@ Component({
     },
     readOnly: {
       type: Boolean
+    },
+    _id: {
+      type: String
     }
   },
 
@@ -34,7 +37,7 @@ Component({
    */
   methods: {
     onLike: function (event) {
-
+      console.log('我点击了like')
       // 自定义事件
       if (this.properties.readOnly) {
         return

@@ -29,9 +29,10 @@ Page({
     })
   },
   onLike: function (event) {
+    console.log('我点击了')
 
     let behavior = event.detail.behavior
-    likeModel.like(behavior, this.data.classicData.id, this.data.classicData.type, (res) => {
+    likeModel.like(behavior, this.data.classicData._id, this.data.classicData.type, (res) => {
       wx.showModal({
         title: '提示',
         icon: 'success',
